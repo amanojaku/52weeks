@@ -1,0 +1,561 @@
+/*
+ Theme Name:   52weeks
+ Theme URI:    
+ Description:  Adamos Child Theme
+ Author:       
+ Author URI:  
+ Template:     adamos
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  adamos
+*/
+#masthead-wrap{
+	border:none;
+	background:#000000;
+}
+
+.main-navigation{
+padding-top:0;
+}
+
+.header_container{
+	min-height:50px;
+	background:#000000;
+}
+/**********************************************
+ADDITIONS
+***********************************************/
+
+/*Home page Header styling*/
+#header_text{
+    color:#ffffff;
+    font-size:100px;
+    font-family: "Arvo" Courier, serif;
+}
+
+#header_text_1{
+	line-height:1;
+	position:absolute;
+    top:30px;
+    right:13%;
+}
+
+#header_text_2{
+	position:absolute;
+	top:140px;
+	right:5%;
+	font-size:200px;
+}
+
+#header_text p{
+margin:0;
+}
+
+.fifty_two{
+    font-size:200px;
+}
+
+.fa-circle{
+	color:#CC0000;
+}
+
+/*Fron page latest post styling*/
+
+.weekly_song{
+	margin: auto;
+	text-align:center;
+}
+
+.weekly_song p{
+	margin-bottom:0;
+}
+
+.weekly_image{
+	display:inline-block;
+	height:131px;
+	width:131px;
+	background-size:cover;
+	border-radius:65.5px;
+	-webkit-border-radius: 65.5px;
+	-moz-border-radius: 65.5px;
+}
+
+.week{
+	float:left;
+	padding-right:10px;
+	display:inline;
+	vertical-align:top;
+	color:#CC0000;
+	font-family: Lobster;
+	font-size:30px;
+}
+
+.song, .title_container{
+	display:inline-block;
+	width:80%;
+	color:#666666;
+	font-family: Lobster;
+	font-size:30px;
+	text-align:center;
+}
+
+.title_container .weekly_image{
+	vertical-align:top;
+}
+
+.title_content{
+	vertical-align:top;
+	display:inline-block;
+	line-height:1;
+	float:right;
+	width: 80%;
+	
+}
+
+.title{
+	vertical-align:top;
+	display:inline-block;
+	font-family: Arvo;
+	font-size:40px;
+	color:#000000;
+}
+
+.section_thumbnails {
+	margin:20px 0;
+	border-bottom:none;
+}
+
+/*Styling to display a single song page*/
+
+#content-song{
+	margin:0;
+	margin-top:20px;
+	font-family: Arial;
+	color:#000000;
+}
+
+#content-song .title{
+	font-size:40px;
+	display:inline;
+}
+
+#content-song p{
+margin:0;
+}
+
+ .artist{
+ 	color:#000000;
+ 	vertical-align:top;
+	font-size:30px;
+	font-family: Arvo;
+}
+
+.collapseomatic{
+	display:block;
+	color:#CC0000;
+	font-size:30px;
+	font-family:Lobster;
+}
+
+.song_list{
+	margin-bottom:20px;
+}
+
+h6{
+	color:#CC0000;
+	font-family: Lobster;
+	font-size:30px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/*For 1680 and less*/
+@media screen and (max-width: 1680px) {
+	.fifty_two, #header_text_2{
+    font-size:180px;
+	}
+}
+
+/*For 1500 and less*/
+@media screen and (max-width: 1500px) {
+	.fifty_two, #header_text_2{
+    font-size:160px;
+	}
+
+	#header_text_2{
+		top:110px;
+	}
+	
+	#header_text{
+		font-size:100px;
+	}
+}
+
+/*For 1250 and less*/
+@media screen and (max-width: 1250px) {
+	.fifty_two, #header_text_2{
+    font-size:120px;
+	}
+	#header_text_1{
+		top:35px;
+	}
+	#header_text_2{
+		top:115px;
+	}
+}
+
+
+/* for 1000px or less */
+@media screen and (max-width: 1000px) {
+	.fifty_two, #header_text_2{
+    font-size:100px;
+	}
+
+	#header_text{
+		font-size:80px;
+	}
+
+	#header_text_1{
+		top:80px;
+	}
+#header_text_2{
+		top:135px;
+	}
+
+	.header_container {
+	height: 100%;
+	width: 100%;
+	}
+	.site-header .site-introduction {
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	}
+	.site-logo {
+	float: none;
+	text-align: center;
+	}
+}
+
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#wrap {
+		padding:0;
+		width: 100%; 	
+	}
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+#masthead .site-introduction {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* for 860px or less */
+@media only screen and (max-width: 860px) {
+	.fifty_two, #header_text_2{
+    font-size:80px;
+	}
+	#header_text{
+		font-size:60px;
+	}
+	#header_text_1{
+		top:85px;
+	}
+
+	
+	#header_text_2{
+		top:120px;
+	}
+
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+}
+
+/* for 800px or less */
+@media only screen and (max-width: 800px) {
+
+	#main {
+		overflow: visible;
+	}
+	#content,
+	#primary,
+	#secondary,
+	#tertiary {
+		background: none;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+	#primary,
+	#secondary,
+	#tertiary {
+		width: 100%;
+	}
+	.site-header site-introduction,
+	#main {
+		padding: 0.8em;
+	}
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+	
+}
+
+/*For 730 and less*/
+@media screen and (max-width: 730px) {
+	.fifty_two, #header_text_2{
+    font-size:60px;
+	}
+
+	#header_text_1{
+		top:95px;
+	}
+	#header_text_2{
+		top:130px;
+	}
+	
+	#header_text{
+		font-size:40px;
+	}
+}
+
+
+/* for 600px or less */
+@media screen and (max-width: 600px) {
+
+	#branding img {
+		display: none;
+	}
+	
+	.header-image {
+		width:100%;
+		margin-top: 0px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.header_container {
+	height: 100%;
+	width: 100%;
+	}
+
+	.site-main {
+    border: 0;
+	}
+}
+
+/* --- for 568 and less --- */
+
+@media screen and (max-width : 568px) {
+
+	.fifty_two, #header_text_2{
+    font-size:50px;
+	}
+
+	#header_text{
+		font-size:30px;
+	}
+	#header_text_1{
+		top:85px;
+	}
+	#header_text_2{
+		top:110px;
+	}
+	
+}
+
+/* --- for 520 and less --- */
+
+@media screen and (max-width : 520px) {
+
+	.fifty_two, #header_text_2{
+    font-size:50px;
+	}
+
+	#header_text{
+		font-size:30px;
+	}
+
+}
+
+
+/* --- Smartphones (portrait and landscape) --- */
+
+@media screen and (max-width : 480px) {
+	.fifty_two, #header_text_2{
+    font-size:45px;
+	}
+	#header_text_1{
+		top:70px;
+	}
+	#header_text_2{
+		top:90px;
+	}
+	#header_text{
+		font-size:30px;
+	}
+
+	#masthead .site-introduction {
+		float: none;
+		padding: 0;
+		padding-left: 4px;
+		width: 100%;
+	}
+	
+	.header_container {
+	height: 100%;
+	width: 100%;
+	}
+
+}
+
+/*  for screens 400 and less */
+
+@media only screen and (max-width: 400px) {
+	.fifty_two, #header_text_2{
+    font-size:40px;
+	}
+
+	#header_text{
+		font-size:30px;
+	}
+}
+
+/*  for screens 350 and less */
+
+@media only screen and (max-width: 350px) {
+	.fifty_two, #header_text_2{
+    font-size:33px;
+	}
+
+	#header_text{
+		font-size:23px;
+	}
+	#header_text_1{
+		top:70px;
+	}
+	#header_text_2{
+		top:90px;
+	}
+}
+
+
+/* --- IPhone5 (portrait and landscape) --- */
+
+@media screen and (max-width : 568px) {
+
+	
+	
+	#masthead .site-introduction {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.header_container {
+	height: 100%;
+	width: 100%;
+	}
+}
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+/*  GRID OF TWO   ============================================================================= */
+
+
+.span_2_of_2 {
+	width: 100%;
+}
+
+.span_1_of_2 {
+	width: 49.8%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2 {
+		width: 100%; 
+	}
+}
+
+/*  GRID OF THREE   ============================================================================= */
+	
+.span_3_of_3 {
+	width: 100%; 
+}
+.span_2_of_3 {
+	width: 66.1%; 
+}
+.span_1_of_3 {
+	width: 32.2%; 
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_8_of_8 {
+		width: 100%; 
+	}
+	.span_7_of_8 {
+		width: 100%; 
+	}
+	.span_6_of_8 {
+		width: 100%; 
+	}
+	.span_5_of_8 {
+		width: 100%; 
+	}
+	.span_4_of_8 {
+		width: 100%; 
+	}
+	.span_3_of_8 {
+		width: 100%; 
+	}
+	.span_2_of_8 {
+		width: 100%; 
+	}
+	.span_1_of_8 {
+		width: 100%; 
+	}
+	.featuretext_top h3{
+	font-size:1.2rem;
+	font-size:12px;
+	padding: 6px;
+	}
+	.featuretext_top p{
+	font-size:1.2rem;
+	font-size:12px;
+	padding: 6px;
+	}
+}
